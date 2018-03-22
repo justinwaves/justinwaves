@@ -1,16 +1,26 @@
 /*--------------WAVES MAIN CSS-----------------*/
+*{ font-family: 'heebo', sans-serif !important;}
+
+h1{
+    font-size: 10vw;
+     
+}
+
+h3{
+    
+    color:white;
+}
+ 
 
 /*--------------SITE BODY----------------------*/
 .bodyWrap{
-    font-family: 'Lato
-    ';
-  -webkit-font-smoothing: antialiased;
-    background-color: aqua;
+
     -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-    box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-    margin: auto;  
-    z-index: 0;
-    height: 100%;
+    box-shadow: inset 0 0 100px rgba(0,0,0,.5);  
+    z-index: -1000000;
+   max-width:100%;
+    overflow: hidden;
+
 }
 
 .menuButton{
@@ -36,32 +46,44 @@
     color:aqua;
     background-color: black; 
     text-align: center;
-    padding: 25;
+    padding:10;
     width:100%;
 }
 
 .mainLogo{
-    width:60%;
-    
+    width:50%;
+    z-index: 102;
 }
 
 .headerContain{
-  
-   max-height: 516px;
+  position:absolute;
+    z-index: 100;
+     width: 100%;
 
 }
 
 .headerImg1{
-    width: 49%;
+    max-height:783 ;
+    max-width:910 ;
     float:left;
+    z-index: 1;
+    
+    position: relative;
+    right:30px;
+    top:-1;
  
    
 }
 
 .headerImg2{
-width: 36%;
-   float:right;
-    overflow: hidden;
+  
+    z-index: 1;
+    max-height: 812px;
+    max-width: 749;
+    float:right;
+    position: relative;
+    left:30px;
+     top:-1;
    
 }
 
@@ -69,53 +91,130 @@ width: 36%;
 /*-----------------BLOG----------------------*/
 
 
-.blogWrap{
+.blogWrapper{
       font-family: 'Lato
     ';
   -webkit-font-smoothing: antialased;
-    border-color: black;
-    border-style: solid;
-    border-width: thick;
-    margin-right:9%;
-    margin-left:8%;
-    margin-top:15%;
     
+   max-width: 850;
+    margin-top:20%;
+    margin-left: auto;
+    margin-right: auto
 }
 
-    
-}
-.blogTitle{
+
+.blogContent{
+ 
    
-    font-size: 100px;
+    text-align: center;
+    padding-top:20;
+    padding-left:30;
+    padding-right:30;
+    margin-top:-30;
    
-}
-
-
-.titleText{
-    font-size: 90;
     
 }
+
+.fernContain{
+
+width:100%;
+overflow: hidden;
+}
+
+
+
 
 .fern1{
-    margin-left:-15px;
+    position: relative;
+    top: -90 ;
+    left:-15%;
+    margin-left:-30;
+    z-index: 2;
+    margin-right: -200 ;
+   
 }
 
-.blackCircle{
-    background-color: white;
-    height: 240px;
-    width: 240px;
-    border-radius: 100%;
-    z-index: 15;
+
+
+
+.fern2{
+     -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+
+     position: relative;
+     top: -90 ;
+     margin-left:-200;
+     z-index: 2;
     
-    position:absolute;
-    top: 460;
-    left:-100px;
+}
+
+
+
+.bottomImages{ 
+
+-webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    transform: scaleY(-1);
+
+   overflow: hidden;
+    
+}
+
+/*----------twitter-----------*/
+.twitHead{
+    background-color: black;
+    max-height: 50
+}
+
+.twitter{
+    
+    border-style: solid;
+    border-width: 10;
+    position: relative;
+    top:100;
+    z-index:5 ;
     
 }
 
 /*--------------Footer----------------------*/
+.headerImg3{
+    max-height:783 ;
+    max-width:910 ;
+    float:left;
+    z-index: 1;
+    
+    position: relative;
+    right:15px;
+    top:-1;
+ 
+   
+}
+
+.headerImg4{
+  
+    z-index: 1;
+    max-height: 812px;
+    max-width: 749;
+    float:right;
+    position: relative;
+    left:30px;
+     top:-1;
+    
+}
+
 
 .footerWrap{
     
+    background-color: black;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    border-top-style: solid;
+   overflow: hidden;
     
+}
+
+.footerTag{
+    position: absolute;
+    bottom:0;
 }
