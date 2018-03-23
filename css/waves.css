@@ -1,8 +1,12 @@
 /*--------------WAVES MAIN CSS-----------------*/
-*{ font-family: 'heebo', sans-serif !important;}
+*{ font-family: 'heebo', sans-serif !important;
+
+
+
+}
 
 h1{
-    font-size: 10vw;
+    font-size: 8vw;
      
 }
 
@@ -14,13 +18,33 @@ h3{
 
 /*--------------SITE BODY----------------------*/
 .bodyWrap{
-
+ 
+  background: linear-gradient(238deg, #fd8800, #fd008f, #9700fd, #003dfd, #05c7e6, #4bd58d);
+  background-size: 1200% 1200%;
+  -webkit-animation: rainbow 30s ease infinite;
+  animation: rainbow 30s ease infinite;
+}
+@-webkit-keyframes rainbow {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+@keyframes rainbow {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+    
+    
     -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
     box-shadow: inset 0 0 100px rgba(0,0,0,.5);  
     z-index: -1000000;
-   max-width:100%;
-    overflow: hidden;
 
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
 .menuButton{
@@ -67,7 +91,6 @@ h3{
     max-width:910 ;
     float:left;
     z-index: 1;
-    
     position: relative;
     right:30px;
     top:-1;
@@ -76,7 +99,6 @@ h3{
 }
 
 .headerImg2{
-  
     z-index: 1;
     max-height: 812px;
     max-width: 749;
@@ -92,25 +114,25 @@ h3{
 
 
 .blogWrapper{
-      font-family: 'Lato
-    ';
-  -webkit-font-smoothing: antialased;
-    
-   max-width: 850;
-    margin-top:20%;
+    max-width: 850;
+    margin-top:27%;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    z-index: 100;
 }
 
 
 .blogContent{
- 
+   background-color: white;
    
     text-align: center;
     padding-top:20;
-    padding-left:30;
-    padding-right:30;
+    padding-left:50;
+    padding-right:50;
+    padding-bottom: 30;
     margin-top:-30;
+    
+    border-radius: 40px;
    
     
 }
@@ -118,7 +140,10 @@ h3{
 .fernContain{
 
 width:100%;
-overflow: hidden;
+
+margin-bottom: -40%;
+margin-top:-3% ;
+   overflow: hidden; 
 }
 
 
@@ -126,11 +151,12 @@ overflow: hidden;
 
 .fern1{
     position: relative;
-    top: -90 ;
+    top: -240 ;
     left:-15%;
     margin-left:-30;
     z-index: 2;
     margin-right: -200 ;
+   
    
 }
 
@@ -141,9 +167,9 @@ overflow: hidden;
      -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 
-     position: relative;
-     top: -90 ;
-     margin-left:-200;
+     position: absolute;
+     top: -240 ;
+     right:-30;
      z-index: 2;
     
 }
@@ -161,20 +187,7 @@ overflow: hidden;
 }
 
 /*----------twitter-----------*/
-.twitHead{
-    background-color: black;
-    max-height: 50
-}
 
-.twitter{
-    
-    border-style: solid;
-    border-width: 10;
-    position: relative;
-    top:100;
-    z-index:5 ;
-    
-}
 
 /*--------------Footer----------------------*/
 .headerImg3{
@@ -185,7 +198,7 @@ overflow: hidden;
     
     position: relative;
     right:15px;
-    top:-1;
+    top:0;
  
    
 }
@@ -198,7 +211,7 @@ overflow: hidden;
     float:right;
     position: relative;
     left:30px;
-     top:-1;
+     top:0;
     
 }
 
