@@ -181,7 +181,7 @@ margin-top:-3% ;
 -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     transform: scaleY(-1);
-
+    margin-bottom: -1;
    overflow: hidden;
     
 }
@@ -223,6 +223,8 @@ margin-top:-3% ;
     width: 100%;
     position: absolute;
     border-top-style: solid;
+    border-top-width: 3px;
+    border-top-color: black;
    overflow: hidden;
     
 }
