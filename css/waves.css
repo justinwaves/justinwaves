@@ -42,9 +42,8 @@ h3{
 
     width: 100%;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+    
+    overflow:disabled;
 }
 
 .menuButton{
@@ -111,13 +110,14 @@ h3{
 
 
 /*-----------------BLOG----------------------*/
-
+.bioWrap{
+    padding: 20px;
+    
+}
 
 .blogWrapper{
-    max-width: 850;
+    max-width:100%;
     margin-top:27%;
-    margin-left: auto;
-    margin-right: auto;
     z-index: 100;
 }
 
@@ -125,16 +125,30 @@ h3{
 .blogContent{
    background-color: white;
    
-    text-align: center;
-    padding-top:20;
-    padding-left:50;
-    padding-right:50;
-    padding-bottom: 30;
-    margin-top:-30;
+    text-align: left;
     
-    border-radius: 40px;
+    padding-top:20;
+    padding-left:10;
+    padding-right:10;
+    padding-bottom: 10;
+    
+    margin-top:-30;
+
+    border-radius: 10px;
+    
+    display:flex;
+    justify-content: space-around;
+    flex-flow: column;
+    
+    box-shadow: 1px 1px 50px #000000;
    
     
+}
+
+.wavesFace{
+    max-width: 100%;
+    margin-top: 40;
+
 }
 
 .fernContain{
@@ -150,12 +164,12 @@ margin-top:-3% ;
 
 
 .fern1{
-    position: relative;
-    top: -240 ;
-    left:-15%;
+    position: fixed;
+    top: -40 ;
+    left:-1%;
     margin-left:-30;
     z-index: 2;
-    margin-right: -200 ;
+
    
    
 }
@@ -167,8 +181,8 @@ margin-top:-3% ;
      -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 
-     position: absolute;
-     top: -240 ;
+     position: fixed;
+     top: 40 ;
      right:-30;
      z-index: 2;
     
@@ -217,7 +231,7 @@ margin-top:-3% ;
 
 
 .footerWrap{
-    
+    text-align: center;
     background-color: black;
     height: 200px;
     width: 100%;
@@ -225,11 +239,28 @@ margin-top:-3% ;
     border-top-style: solid;
     border-top-width: 3px;
     border-top-color: black;
+     z-index: 1000;
    overflow: hidden;
     
+    display: flex;
+    flex-direction:row;
 }
 
 .footerTag{
     position: absolute;
     bottom:0;
+    z-index: 1000;
+}
+
+.instagram-media{
+  margin-top:30px;  
+    
+}
+
+.footerLogo{
+    margin-top:30;
+max-width: 40%;
+    margin-bottom: 30;
+   
+
 }
