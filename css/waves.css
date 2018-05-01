@@ -1,15 +1,10 @@
 /*--------------WAVES MAIN CSS-----------------*/
 html,body{ 
     
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
+    width: 100%;!important;
+    margin: 0px; !important;
+    padding: 0px;!important;
     overflow-x: hidden;
-}
-
-
-*{ 
-
 }
 
 
@@ -47,7 +42,8 @@ h3{
 
 .menuButtons{
     width: 70px;
-    height:70px;
+    height:60px;
+    margin:4px;
     border-radius: 10px;
     border-color: salmon;
     border-width: 2;

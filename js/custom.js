@@ -1,36 +1,23 @@
-
-
+//Justin says hello to you, and thinks you are awesome
 
 var buttons = document.querySelectorAll(".menuContainer");
-var arrows = document.querySelectorAll(".menuButtons");
 
 
-
-for (i = 0; i < buttons.length; i ++) {
+for (i = 0; i < buttons.length; i++) {
   buttons[i].onclick = function() {
     
     var content = this.nextElementSibling;
-    var arrows = document.querySelectorAll(".menuButtons");
       
     if(content.style.maxHeight){
-      content.style.maxHeight = null;  
-        
+      content.style.maxHeight = null;
+            this.children[1].innerHTML ="<i class='fas fa-angle-left' id='leftIcon'></i>"; 
     } else{
         content.style.maxHeight = content.scrollHeight + "px";
+            this.children[1].innerHTML ="<i class='fas fa-angle-down' id='leftIcon'></i>"; 
     }
   }
 };
 
-for (i = 0; i < arrows.length; i ++) {
-  arrows[i].onclick = function() {
-    
-      
-    if (arrows.innerHTML="<i class='fas fa-angle-left' id='leftIcon'></i>") {
-         arrows = this.innerHTML ="<i class='fas fa-angle-down' id='leftIcon'></i>"; 
-     
-    } else {
-    arrows= this.innerHTML ="<i class='fas fa-angle-left' id='leftIcon'></i>"; 
-    }
-  }
-};
+
+
 
