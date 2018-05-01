@@ -5,32 +5,111 @@ html,body{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    
 }
 
 
-
-*{ font-family: 'heebo', sans-serif !important;
-
-
+*{ 
 
 }
+
 
 h1{
-    font-size: 8vw;
-    border-bottom-width: 10px;
-   
-    border-bottom-style: solid;
+    font-size: 5vw;
  
     text-align: left;
     padding-left:8;
 }
 
+
 h3{
-    
     color:white;
 }
+
+
  
+/*-=-=-=-=-=-=-=-=MENU ITEMS=-=-=-=-=-=-=-=-=-=*/
+
+.menuContainer{
+
+    display:flex;
+    justify-content:space-between;
+    flex-flow: row;
+    align-items:center;
+    
+    border-bottom: 1px;
+    border-bottom-color: whitesmoke;
+    border-bottom-style: solid;
+    
+}
+
+.menuContainer:hover{
+    background-color: whitesmoke}
+
+.menuButtons{
+    width: 70px;
+    height:70px;
+    border-radius: 10px;
+    border-color: salmon;
+    border-width: 2;
+    border-style:solid;
+     box-shadow: 1px 1px 5px #000;
+    
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    
+    cursor: pointer;
+   
+    
+    
+    background: linear-gradient(-45deg, red, red, white, red, red);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 7s ease infinite;
+	-moz-animation: Gradient 7s ease infinite;
+	animation: Gradient 7s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {background-position: 0% 0%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 1000% 100%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {background-position: 0% 0%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 1000% 100%}
+}
+
+@keyframes Gradient {
+	0% {background-position: 0% 0%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 100% 100%}
+
+    
+
+}
+
+#leftIcon{
+    
+    color: white;
+    font-size: 50px;
+     transition: font-size 0.1s linear;
+}
+
+#leftIcon:hover{
+    font-size: 60px;
+}
+
+
+.menuContent{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+    
+}
+
 
 
 
@@ -55,28 +134,8 @@ h3{
   50% { background-position: 100% 50% }
   100% { background-position: 0% 50% }
 }
-    
-    
- 
-}
 
-.menuButton{
-    
-    background-color: aqua;
-    position: fixed;
-    height: 50px;
-    width: 50px;
-    z-index: ;
-    border-color: white;
-    border-width: 1px;
-    border-radius:3px ;
-    
-    margin-top: 20px;
-    margin-left: 20px;
-    
-    display:none;
-    
-}
+
 
 /*-----------------HEADER----------------------*/
 .header{
@@ -87,17 +146,19 @@ h3{
     width:100%;
 }
 
+
 .mainLogo{
     width:50%;
     z-index: 102;
 }
 
-.headerContain{
-  position:absolute;
-    z-index: 100;
-     width: 100%;
 
+.headerContain{
+    position:absolute;
+    z-index: 100;
+    width: 100%;
 }
+
 
 .headerImg1{
     max-height:783 ;
@@ -107,9 +168,8 @@ h3{
     position: relative;
     right:30px;
     top:-1;
- 
-   
 }
+
 
 .headerImg2{
     z-index: 1;
@@ -118,8 +178,7 @@ h3{
     float:right;
     position: relative;
     left:30px;
-     top:-1;
-   
+    top:-1;
 }
 
 
@@ -132,11 +191,9 @@ h3{
 .blogWrapper{
     max-width:100%;
     margin-top:27%;
+    margin-bottom: 17%;
     z-index: 100;
-    
-
-       text-align: center;
-    
+    text-align: center;
 }
 
 
@@ -157,17 +214,14 @@ h3{
     display:flex;
     justify-content: space-around;
     flex-flow: column;
-    
     box-shadow: 0px 0px 50px #000;
-   
-    
 }
 
+
 .recordingWrap{
-    
     margin-top:50;
-    
 }
+
 
 .wavesFace{
     max-width: 60%;
@@ -181,6 +235,27 @@ h3{
   shape-outside:circle();
 
 }
+
+#socialContent{
+ 
+}
+
+.contactIconWrap{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row;
+    align-content: center;
+    
+    margin:20px;
+}
+
+
+#contactIcons{
+    font-size: 300px;    
+    color: black
+}
+
+/*----------BACKGROUND ELEMENTS-----------*/
 
 .fernContain{
 
@@ -200,12 +275,7 @@ margin-top:-3% ;
     left:-1%;
     margin-left:-30;
     z-index: 2;
-
-   
-   
 }
-
-
 
 
 .fern2{
@@ -216,7 +286,6 @@ margin-top:-3% ;
      top: 40 ;
      right:-30;
      z-index: 2;
-    
 }
 
 
@@ -231,7 +300,7 @@ margin-top:-3% ;
     
 }
 
-/*----------twitter-----------*/
+
 
 
 /*--------------Footer----------------------*/
@@ -266,13 +335,13 @@ margin-top:-3% ;
     background-color: black;
     height: 200px;
     width: 100%;
+    margin-top: -1px;
     position: absolute;
     border-top-style: solid;
-    border-top-width: 3px;
+    border-top-width: 0px;
     border-top-color: black;
-     z-index: 1000;
-   overflow: hidden;
-    
+    z-index: 1000;
+    overflow: hidden;
     display: flex;
     justify-content: center
  
@@ -281,6 +350,7 @@ margin-top:-3% ;
 .footerTag{
     position: absolute;
     bottom:0;
+    left: 10px;
     z-index: 1000;
 }
 
