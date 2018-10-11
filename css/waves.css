@@ -156,6 +156,64 @@ h3{
     top:-1;
 }
 
+/*-----------------Slider----------------------*/
+
+.slider {
+  max-width: 100%;
+  height: 300px;
+   
+  margin: 20px auto;
+  position: relative;
+}
+.slide1,.slide2,.slide3,.slide4,.slide5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+     border-radius: 10px;
+}
+.slide1 {
+  background: url('/justinwaves/images/IMG_20180809_001407.jpg')no-repeat center;
+      background-size: cover;
+    animation:fade 24s infinite;
+-webkit-animation:fade 24s infinite;
+
+} 
+.slide2 {
+  background: url('/justinwaves/images/38131536_1981058028582027_1418499093663055872_o.jpg')no-repeat center;
+      background-size: cover;
+    animation:fade2 24s infinite;
+-webkit-animation:fade2 24s infinite;
+}
+.slide3 {
+    background: url('/justinwaves/images/22664330_10156635815353056_497420633_o.jpg')no-repeat center;
+      background-size: cover;
+    animation:fade3 24s infinite;
+-webkit-animation:fade3 24s infinite;
+}
+
+
+
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}
 
 /*-----------------BLOG----------------------*/
 .bioWrap{
@@ -169,20 +227,20 @@ h3{
     margin-bottom: 17%;
     z-index: 100;
     text-align: center;
+    
 }
-
 
 .blogContent{
    background-color: white;
    
     text-align: center;
     
-    padding-top:20;
+    padding-top:0;
     padding-left:10;
     padding-right:10;
     padding-bottom: 10;
     
-    margin-top:-30;
+   
 
     border-radius: 10px;
     
